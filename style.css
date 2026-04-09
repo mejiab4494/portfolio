@@ -9,9 +9,9 @@
 body {
     display: flex;
     color: white;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Roboto Condensed", sans-serif;
      background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("./img/office.png");
     background-size: cover;
@@ -65,13 +65,24 @@ body {
 .intro {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    max-width: 450px;
+    max-width: 950px;
     margin: 0 auto;
     gap: 15px;
+}
+
+.intro img {
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+    flex-shrink: 0;
+}
+.intro h1 {
+    font-size: 6em;
+    font-weight: bold;
+    width: 100%;
 }
 
 .intro p {
@@ -88,6 +99,8 @@ body {
     margin-top: 2em;
     margin-bottom: 3em;
 }
+
+
 
 .cards-container {
     display: flex;
@@ -119,4 +132,52 @@ body {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.projects h1 {
+    font-size: 3em;
+}
+
+.card {
+  margin-top: 3em;
+}
+
+/* about section */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+    gap: 35px;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.mainPhoto {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    font-size: 1.2em;
+    min-width: 700px;
+}
+
+.images {
+    display: flex;
+    padding-top: 12px;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.images img {
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
 }
