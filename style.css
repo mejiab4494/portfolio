@@ -28,7 +28,22 @@ body {
   background-color: rgb(47, 46, 46);
   height: 7em;
   opacity: 80%;
+  animation: slideDown 0.6s ease-out forwards;
+
 }
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
 .header img {
     width: 100px;
@@ -170,14 +185,30 @@ body {
 
 .images {
     display: flex;
-    padding-top: 12px;
-    justify-content: space-around;
+    padding-top: 15px;
+    justify-content: space-evenly;
     gap: 20px;
 
 }
 
-.images img {
-    width: 100px;
+.img-wrapper {
+    width: 150px;
     height: auto;
+}
+
+
+.img-wrapper img {
+    width: 150px;
+    height: 160px;
     border-radius: 30px;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.img-wrapper:hover img {
+    transform: scale(2.1) translateY(-40%);
+    transform-origin: bottom center;
+    z-index: 999;
 }
