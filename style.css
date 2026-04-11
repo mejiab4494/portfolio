@@ -212,3 +212,62 @@ body {
     transform-origin: bottom center;
     z-index: 999;
 }
+
+/* contact section */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 35px;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.contact-container { 
+    flex: 1;
+}
+
+.contact h1 {
+    font-size: 4em;
+}
+
+.contact p {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    max-width: 500px;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.contact-icons img {
+    padding-top: 10px ;
+    width: 4em;
+    height: auto;
+}
+
+.contact-icons li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-image {
+    flex: 1;
+    max-width: 200px;
+    width: 35%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* contact form */
