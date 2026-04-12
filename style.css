@@ -223,7 +223,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     gap: 35px;
-    padding-top: 3em;
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 
@@ -271,3 +271,166 @@ body {
 }
 
 /* contact form */
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    min-height: 300px;
+    gap: 15px;
+}
+
+.email form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 15px;
+}
+
+/* Name and Email on the same row */
+.email form .row {
+    display: flex;
+    gap: 15px;
+}
+
+.email form .row .field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+
+/* All other fields */
+.email form label {
+    font-weight: 500;
+}
+
+.email form input,
+.email form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Larger textarea for message */
+.email form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Centered button */
+.email form button {
+    align-self: center;
+    padding: 10px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* ══════════════════════════════
+   TABLET  (max 900px)
+══════════════════════════════ */
+@media (max-width: 900px) {
+    .header {
+        height: auto;
+        padding: 1em;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        margin-right: 0;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 180px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mainPhoto {
+        width: 200px;
+    }
+
+    .about-text {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-image {
+        max-width: 150px;
+        width: 150px;
+    }
+
+    .contact p {
+        max-width: 100%;
+    }
+
+    .contact-icons {
+        justify-content: center;
+    }
+}
+
+/* ══════════════════════════════
+   MOBILE  (max 600px)
+══════════════════════════════ */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+        gap: 0.75em;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .intro img {
+        width: 140px;
+    }
+
+    .mainPhoto {
+        width: 150px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .email form .row {
+        flex-direction: column;
+    }
+
+    .contact p {
+        font-size: 1.1em;
+    }
+
+    .img-wrapper img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .img-wrapper {
+        width: 110px;
+    }
+}
