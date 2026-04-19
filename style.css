@@ -137,6 +137,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    max-width: 1300px;
     gap: 20px;
     margin-top: 2em;
 }
@@ -432,5 +433,15 @@ body {
 
     .img-wrapper {
         width: 110px;
+    }
+}
+
+@media (min-width: 1519px) {
+    .projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1600px;
+        margin: 0 auto;
     }
 }

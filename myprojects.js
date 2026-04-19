@@ -18,10 +18,15 @@ export const myProjects = [
         link: "https://tenzigame1.netlify.app/"
     },
     {
-        title: "Chef Claude",
-        description: "An AI-powered recipe suggestion app",
-        image: "./img/chefclaude.png",
-        link: "https://recipesuggest.netlify.app/"
+        title: "taskBoard",
+        description: "Task Managment Board",
+        image: "./img/gif4.gif",
+        link: "https://taskboard4494.netlify.app/"
+    },
+    {   title: "Hangman",
+        description: "A classic word guessing game.",
+        image: "./img/hangman.png",
+        link: "https://assemblyjuego.netlify.app/"
     },
     {
         title: "Pokedex",
@@ -40,9 +45,12 @@ export const myProjects = [
         image: "./img/list.png",
         link: "https://mejiab4494.github.io/list/"
     },
-    {   title: "Hangman",
-        description: "A classic word guessing game.",
-        image: "./img/hangman.png",
-        link: "https://assemblyjuego.netlify.app/"
-    }
+    {
+        title: "Chef Claude",
+        description: "An AI-powered recipe suggestion app",
+        image: "./img/chefclaude.png",
+        link: "https://recipesuggest.netlify.app/"
+    },
+   
+    
 ];
