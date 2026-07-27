@@ -3,68 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <meta name="description" content="About Bryan Mejia — a self-taught front-end developer based in Northern Virginia, making the jump from hobby to career.">
+    <title>About | Bryan Mejia</title>
+    <link rel="icon" type="image/x-icon" href="./img/compu.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="header">
-        <a href="./index.html"><img src="./img/bamcircuit.jpg" alt="icon" class="icon"/></a>
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="./img/bamcircuit.jpg" alt="Bryan Mejia" class="logo-icon"/></a>
         <nav class="navbar">
-            <ul>
-                <li><a href="./about.html">About</a></li>
+            <ul class="nav-links">
+                <li><a href="./about.html" aria-current="page">About</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://github.com/mejiab4494" target="_blank"><img src="./img/github.png" alt="GitHub icon" class="icon"/></a></li>
-                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn icon" class="icon"/></a></li>
-                <li><a href="https://www.instagram.com/peti4494/" target="_blank"><img src="./img/instagram.png" alt="Instagram icon" class="icon"/></a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://github.com/mejiab4494" target="_blank" rel="noopener" aria-label="GitHub"><img src="./img/github.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./img/linkedin.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.instagram.com/peti4494/" target="_blank" rel="noopener" aria-label="Instagram"><img src="./img/instagram.png" alt="" class="icon"/></a></li>
             </ul>
         </nav>
-    </section>
+    </header>
+
     <section id="intro" class="about">
-        <img src="./img/mio2.jpg" alt="Bryan's photo" class="mainPhoto"/>s
+        <img src="./img/mio2.jpg" alt="Bryan Mejia" class="mainPhoto"/>
         <div class="about-text">
+            <h1>About me</h1>
             <p>
-                It all started during COVID — stuck at home like everyone else, I stumbled across coding 
-                and something just clicked. What began as a way to pass the time quietly turned into a 
-                full-on passion. I started with the basics, kept building, kept breaking things, and kept 
+                It all started during COVID &mdash; stuck at home like everyone else, I stumbled across coding
+                and something just clicked. What began as a way to pass the time quietly turned into a
+                full-on passion. I started with the basics, kept building, kept breaking things, and kept
                 coming back for more. Now I'm ready to turn that passion into a career.
-            </p><br>
+            </p>
             <p>
-                I'm a self-taught developer based in Northern Virginia, and I genuinely love what I do. 
-                There's something satisfying about starting with a blank screen and ending up with something 
-                real — something people can actually use and interact with. Clean code, thoughtful design, 
+                I'm a self-taught developer based in Northern Virginia, and I genuinely love what I do.
+                There's something satisfying about starting with a blank screen and ending up with something
+                real &mdash; something people can actually use and interact with. Clean code, thoughtful design,
                 and that feeling when everything finally works the way it should? That's what keeps me going.
-            </p><br>
+            </p>
             <p>
-                When I'm not coding, you'll probably find me out on a trail somewhere with my dog, watching 
-                a comedy that has me laughing too loud, or falling down a rabbit hole on a paranormal podcast 
-                at midnight. I like building things, I like the outdoors, and I like stories — whether they're 
+                When I'm not coding, you'll probably find me out on a trail somewhere with my dog, watching
+                a comedy that has me laughing too loud, or falling down a rabbit hole on a paranormal podcast
+                at midnight. I like building things, I like the outdoors, and I like stories &mdash; whether they're
                 written in JavaScript or told around a campfire.
-            </p><br>
+            </p>
             <p>
-                I'm currently looking to make the jump from hobby to career. If you're looking for someone 
-                who is hungry to learn, genuinely passionate about front-end development, and not afraid to 
-                put in the work — let's talk.
+                <strong>I'm currently looking to make the jump from hobby to career.</strong> If you're looking
+                for someone who is hungry to learn, genuinely passionate about front-end development, and not
+                afraid to put in the work &mdash; let's talk.
             </p>
         </div>
     </section>
-    <hr>
+
+    <hr class="section-divider">
+
     <section class="images">
         <div class="img-wrapper">
-            <img src="./img/mio.jpg" alt="Bryan's photo" class="galleryPhoto"/>
+            <img src="./img/mio.jpg" alt="Bryan on the trail" class="galleryPhoto"/>
         </div>
         <div class="img-wrapper">
-            <img src="./img/mio1.jpg" alt="Bryan's photo" class="galleryPhoto"/>
+            <img src="./img/mio1.jpg" alt="Bryan Mejia" class="galleryPhoto"/>
         </div>
         <div class="img-wrapper">
-            <img src="./img/mio3.jpg" alt="Bryan's photo" class="galleryPhoto"/>
+            <img src="./img/mio3.jpg" alt="Bryan Mejia" class="galleryPhoto"/>
         </div>
         <div class="img-wrapper">
-            <img src="./img/mio4.jpg" alt="Bryan's photo" class="galleryPhoto"/>
+            <img src="./img/mio4.jpg" alt="Bryan Mejia" class="galleryPhoto"/>
         </div>
         <div class="img-wrapper">
-            <img src="./img/mio5.jpg" alt="Bryan's photo" class="galleryPhoto"/>
+            <img src="./img/mio5.jpg" alt="Bryan Mejia" class="galleryPhoto"/>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <span>&copy; <span id="year"></span> Bryan Mejia</span>
+        <a href="./contact.html">Let's work together &rarr;</a>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

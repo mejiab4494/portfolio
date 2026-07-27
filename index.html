@@ -3,65 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan Mejia | Portfolio</title>
+    <meta name="description" content="Bryan Mejia — self-taught front-end developer in Northern Virginia building clean, responsive interfaces with HTML, CSS, JavaScript, and React.">
+    <title>Bryan Mejia | Front-End Developer</title>
     <link rel="icon" type="image/x-icon" href="./img/compu.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="header">
-        <img src="./img/bamcircuit.jpg" alt="icon" class="icon"/>
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="./img/bamcircuit.jpg" alt="Bryan Mejia" class="logo-icon"/></a>
         <nav class="navbar">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://github.com/mejiab4494" target="_blank"><img src="./img/github.png" alt="GitHub icon" class="icon"/></a></li>
-                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn icon" class="icon"/></a></li>
-                <li><a href="https://www.instagram.com/peti4494/" target="_blank"><img src="./img/instagram.png" alt="Instagram icon" class="icon"/></a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://github.com/mejiab4494" target="_blank" rel="noopener" aria-label="GitHub"><img src="./img/github.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./img/linkedin.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.instagram.com/peti4494/" target="_blank" rel="noopener" aria-label="Instagram"><img src="./img/instagram.png" alt="" class="icon"/></a></li>
             </ul>
         </nav>
-    </section>
+    </header>
+
     <section id="home" class="intro">
-  <div class="intro-text">
-    <h1>Welcome</h1>
-    <h2>Front-End Developer, Northern Virginia</h2>
-    <p>My name is Bryan Mejia, a self-taught front-end developer with a sharp eye for detail and a passion for turning ideas into clean, 
-    responsive interfaces. Based in Northern Virginia, I bring a builder's mindset to every project — diving deep into the code, 
-    iterating fast, and crafting experiences that feel intuitive from the very first click. 
-    Whether it's a slick component or a full-page layout, 
-    I believe great UI starts with understanding the user and ends with code that's as readable as the design itself.</p>
-  </div>
-  <img src="./img/laptop.jpg" alt="computer" class="intro-image"/>
-</section>
+        <div class="intro-text">
+            <p class="eyebrow">Front-End Developer &middot; Northern Virginia</p>
+            <h1>Bryan Mejia</h1>
+            <p class="lede">
+                Self-taught developer who turns ideas into clean, responsive interfaces.
+                I dive deep into the code, iterate fast, and care about the details that
+                make an experience feel intuitive from the very first click.
+            </p>
+            <div class="hero-actions">
+                <a href="./portfolio.html" class="btn btn-primary">View my work</a>
+                <a href="./contact.html" class="btn btn-ghost">Get in touch</a>
+            </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+            <div class="terminal">
+                <div class="terminal-bar"><span></span><span></span><span></span></div>
+                <pre class="terminal-body"><code><span class="tok-key">const</span> <span class="tok-var">bryan</span> = {
+  <span class="tok-prop">role</span>: <span class="tok-str">"Front-End Developer"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JS"</span>, <span class="tok-str">"React"</span>],
+  <span class="tok-prop">basedIn</span>: <span class="tok-str">"Northern Virginia"</span>,
+  <span class="tok-prop">status</span>: <span class="tok-str">"open to work"</span>,
+};</code></pre>
+            </div>
+        </div>
+    </section>
+
     <section id="portfolio" class="portfolio">
-    <h2>Some of My Projects</h2>
-    <div class="cards-container">
-        <div class="card">
-            <a href="https://datacquiz.netlify.app/#home" target="_blank">
-                <img src="./img/gif1.gif" alt="Project 1" class="project-image"/>
-            </a>
-            <h3>Data Center 101</h3>
+        <div class="section-heading">
+            <h2>Featured projects</h2>
+            <a href="./portfolio.html" class="see-all">See all projects &rarr;</a>
         </div>
-        <div class="card">
-            <a href="https://splendorous-llama-8de4fc.netlify.app/" target="_blank">
-                <img src="./img/gif2.gif" alt="Project 2" class="project-image"/>
-            </a>
-            <h3>Online Store</h3>
-        </div>
-        <div class="card">
-            <a href="https://tenzigame1.netlify.app/" target="_blank">
-                <img src="./img/gif3.gif" alt="Project 3" class="project-image"/>
-            </a>
-            <h3>Tenzi</h3>
-        </div>
-        <div class="card">
-            <a href="https://taskboard4494.netlify.app/" target="_blank">
-                <img src="./img/gif4.gif" alt="Project 4" class="project-image"/>
-            </a>
-            <h3>Task Board</h3>
-        </div>
-    </div>
-</section>
-     <script    src="./script.js"></script>
+        <div class="cards-container" id="home-projects"></div>
+    </section>
+
+    <footer class="site-footer">
+        <span>&copy; <span id="year"></span> Bryan Mejia</span>
+        <a href="./contact.html">Let's work together &rarr;</a>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

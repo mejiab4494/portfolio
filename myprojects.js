@@ -3,54 +3,63 @@ export const myProjects = [
         title: "Data Center 101",
         description: "A comprehensive guide to data center operations.",
         image: "./img/gif1.gif",
-        link: "https://datacquiz.netlify.app/#home"
+        link: "https://datacquiz.netlify.app/#home",
+        tag: "JavaScript"
     },
     {
         title: "Online Store",
         description: "A modern e-commerce platform.",
         image: "./img/gif2.gif",
-        link: "https://splendorous-llama-8de4fc.netlify.app/"
+        link: "https://splendorous-llama-8de4fc.netlify.app/",
+        tag: "React"
     },
     {
         title: "Tenzi",
         description: "A fun dice game for all ages.",
         image: "./img/gif3.gif",
-        link: "https://tenzigame1.netlify.app/"
+        link: "https://tenzigame1.netlify.app/",
+        tag: "React"
     },
     {
-        title: "taskBoard",
-        description: "Task Managment Board",
+        title: "Task Board",
+        description: "Task management board.",
         image: "./img/gif4.gif",
-        link: "https://taskboard4494.netlify.app/"
+        link: "https://taskboard4494.netlify.app/",
+        tag: "JavaScript"
     },
-    {   title: "Hangman",
+    {
+        title: "Hangman",
         description: "A classic word guessing game.",
         image: "./img/hangman.png",
-        link: "https://assemblyjuego.netlify.app/"
+        link: "https://assemblyjuego.netlify.app/",
+        tag: "React"
     },
     {
         title: "Pokedex",
         description: "A digital encyclopedia of Pokémon.",
         image: "./img/pokedex.png",
-        link: "https://mejiab4494.github.io/Pokedex/"
-    }, 
+        link: "https://mejiab4494.github.io/Pokedex/",
+        tag: "JavaScript / API"
+    },
     {
         title: "Invoice Generator",
         description: "A simple invoice generation tool.",
         image: "./img/invoicegenerator.png",
-        link: "https://mejiab4494.github.io/invoicegenerator/"
+        link: "https://mejiab4494.github.io/invoicegenerator/",
+        tag: "JavaScript"
     },
-    {   title: "Chore List",
+    {
+        title: "Chore List",
         description: "A task management app for household chores.",
         image: "./img/list.png",
-        link: "https://mejiab4494.github.io/list/"
+        link: "https://mejiab4494.github.io/list/",
+        tag: "JavaScript"
     },
     {
         title: "Chef Claude",
-        description: "An AI-powered recipe suggestion app",
+        description: "An AI-powered recipe suggestion app.",
         image: "./img/chefclaude.png",
-        link: "https://recipesuggest.netlify.app/"
+        link: "https://recipesuggest.netlify.app/",
+        tag: "React / API"
     },
-   
-    
 ];

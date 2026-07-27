@@ -3,53 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./style.css"> 
+    <meta name="description" content="Get in touch with Bryan Mejia, a front-end developer based in Northern Virginia.">
+    <title>Contact | Bryan Mejia</title>
+    <link rel="icon" type="image/x-icon" href="./img/compu.jpg">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-     <section class="header">
-        <a href="./index.html"><img src="./img/bamcircuit.jpg" alt="icon" class="icon"/></a>
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="./img/bamcircuit.jpg" alt="Bryan Mejia" class="logo-icon"/></a>
         <nav class="navbar">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://github.com/mejiab4494" target="_blank"><img src="./img/github.png" alt="GitHub icon" class="icon"/></a></li>
-                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn icon" class="icon"/></a></li>
-                <li><a href="https://www.instagram.com/peti4494/" target="_blank"><img src="./img/instagram.png" alt="Instagram icon" class="icon"/></a></li>
+                <li><a href="./contact.html" aria-current="page">Contact</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://github.com/mejiab4494" target="_blank" rel="noopener" aria-label="GitHub"><img src="./img/github.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./img/linkedin.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.instagram.com/peti4494/" target="_blank" rel="noopener" aria-label="Instagram"><img src="./img/instagram.png" alt="" class="icon"/></a></li>
             </ul>
         </nav>
-    </section>
+    </header>
+
     <section class="contact">
         <div class="contact-container">
-            <h1>Contact</h1>
-            <p>If you have any questions or would like to get in touch, please feel free to reach out to me through the following channels:</p>
-                <ul class="contact-icons">
-                    <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn icon" class="icon"/>LinkIn</a></li>
-                    <li><a href="https://www.instagram.com/bryan.mejia/" target="_blank"><img src="./img/instagram.png" alt="Instagram icon" class="icon"/>Instagram</a></li>
-                </ul>
+            <h1>Let's talk</h1>
+            <p>Have a project in mind, a question, or just want to connect? Reach out through the form below or find me on:</p>
+            <ul class="contact-icons">
+                <li><a href="https://github.com/mejiab4494" target="_blank" rel="noopener"><img src="./img/github.png" alt="" class="icon"/>GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank" rel="noopener"><img src="./img/linkedin.png" alt="" class="icon"/>LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/peti4494/" target="_blank" rel="noopener"><img src="./img/instagram.png" alt="" class="icon"/>Instagram</a></li>
+            </ul>
         </div>
-        <img src="./img/mail.png" alt="Contact image" class="contact-image"/>
+        <img src="./img/mail.png" alt="" class="contact-image"/>
     </section>
-    <hr>
+
+    <hr class="section-divider">
+
     <section class="email">
         <form action="https://formspree.io/f/xgorwdvp" method="POST">
             <div class="row">
                 <div class="field">
-                    <label for="name">Name:</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="field">
-                    <label for="email">Email:</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
             </div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Send</button>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send message</button>
         </form>
     </section>
-    
-     <script    src="./script.js"></script>
+
+    <footer class="site-footer">
+        <span>&copy; <span id="year"></span> Bryan Mejia</span>
+        <a href="./index.html">Back to home</a>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

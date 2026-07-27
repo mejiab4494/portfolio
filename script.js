@@ -1,28 +1,59 @@
 import { myProjects } from "./myprojects.js";
 
-const cardsContainer = document.querySelector(".cards-container");
+function renderProjects(container, projects) {
+    projects.forEach(project => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-myProjects.forEach(project => {
-    const card = document.createElement("div");
-    card.classList.add("card");
+        const link = document.createElement("a");
+        link.href = project.link;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.classList.add("project-link");
 
-    const link = document.createElement("a");
-    link.href = project.link;
-    link.target = "_blank";
+        const imageWrap = document.createElement("div");
+        imageWrap.classList.add("project-image-wrap");
 
-    const img = document.createElement("img");
-    img.src = project.image;
-    img.alt = project.title;
+        const img = document.createElement("img");
+        img.src = project.image;
+        img.alt = `${project.title} preview`;
+        img.loading = "lazy";
+        img.classList.add("project-image");
 
-    const title = document.createElement("h3");
-    title.textContent = project.title;
+        imageWrap.appendChild(img);
+        link.appendChild(imageWrap);
 
-    const description = document.createElement("p");
-    description.textContent = project.description;
+        const body = document.createElement("div");
+        body.classList.add("card-body");
 
-    link.appendChild(img);
-    card.appendChild(link);
-    card.appendChild(title);
-    card.appendChild(description);
-    cardsContainer.appendChild(card);
-});
+        const title = document.createElement("h3");
+        title.textContent = project.title;
+
+        const description = document.createElement("p");
+        description.textContent = project.description;
+
+        body.appendChild(title);
+        body.appendChild(description);
+
+        if (project.tag) {
+            const tag = document.createElement("span");
+            tag.classList.add("tag");
+            tag.textContent = project.tag;
+            body.appendChild(tag);
+        }
+
+        link.appendChild(body);
+        card.appendChild(link);
+        container.appendChild(card);
+    });
+}
+
+const homeContainer = document.querySelector("#home-projects");
+if (homeContainer) {
+    renderProjects(homeContainer, myProjects.slice(0, 3));
+}
+
+const portfolioContainer = document.querySelector("#portfolio-projects");
+if (portfolioContainer) {
+    renderProjects(portfolioContainer, myProjects);
+}

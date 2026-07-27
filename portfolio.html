@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of front-end projects by Bryan Mejia, built with HTML, CSS, JavaScript, and React.">
+    <title>Portfolio | Bryan Mejia</title>
+    <link rel="icon" type="image/x-icon" href="./img/compu.jpg">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
-    <section class="header">
-        <a href="./index.html"><img src="./img/bamcircuit.jpg" alt="icon" class="icon"/></a>
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="./img/bamcircuit.jpg" alt="Bryan Mejia" class="logo-icon"/></a>
         <nav class="navbar">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./about.html">About</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./portfolio.html" aria-current="page">Portfolio</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://github.com/mejiab4494" target="_blank"><img src="./img/github.png" alt="GitHub icon" class="icon"/></a></li>
-                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn icon" class="icon"/></a></li>
-                <li><a href="https://www.instagram.com/peti4494/" target="_blank"><img src="./img/instagram.png" alt="Instagram icon" class="icon"/></a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://github.com/mejiab4494" target="_blank" rel="noopener" aria-label="GitHub"><img src="./img/github.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.linkedin.com/in/bryan-mejia-580157243/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./img/linkedin.png" alt="" class="icon"/></a></li>
+                <li><a href="https://www.instagram.com/peti4494/" target="_blank" rel="noopener" aria-label="Instagram"><img src="./img/instagram.png" alt="" class="icon"/></a></li>
             </ul>
         </nav>
-    </section>
+    </header>
+
     <section class="projects">
         <h1>Portfolio</h1>
-        <div class="cards-container">
-            <!-- Project cards will be dynamically inserted here -->
-        </div>
+        <p class="page-lede">A running list of things I've built while learning &mdash; games, tools, and small apps, each one teaching me something the last one didn't.</p>
+        <div class="cards-container" id="portfolio-projects"></div>
     </section>
-    
+
+    <footer class="site-footer">
+        <span>&copy; <span id="year"></span> Bryan Mejia</span>
+        <a href="./contact.html">Let's work together &rarr;</a>
+    </footer>
+
     <script type="module" src="./script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
