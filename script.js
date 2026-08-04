@@ -50,7 +50,7 @@ function renderProjects(container, projects) {
 
 const homeContainer = document.querySelector("#home-projects");
 if (homeContainer) {
-    renderProjects(homeContainer, myProjects.slice(0, 3));
+    renderProjects(homeContainer, myProjects.slice(0, 4));
 }
 
 const portfolioContainer = document.querySelector("#portfolio-projects");

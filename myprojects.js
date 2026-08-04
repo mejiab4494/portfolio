@@ -1,10 +1,17 @@
 export const myProjects = [
     {
+        title: "DeliMundo",
+        description: "Pastery website for a local business.",
+        image: "./img/delimundo.gif",
+        link: "http://delimundo.co/",
+        tag: "JavaScript"
+    },
+    {
         title: "Data Center 101",
         description: "A comprehensive guide to data center operations.",
         image: "./img/gif1.gif",
         link: "https://datacquiz.netlify.app/#home",
-        tag: "JavaScript"
+        tag: "React"
     },
     {
         title: "Online Store",
@@ -13,19 +20,19 @@ export const myProjects = [
         link: "https://splendorous-llama-8de4fc.netlify.app/",
         tag: "React"
     },
+     {
+        title: "Task Board",
+        description: "Task management board.",
+        image: "./img/gif4.gif",
+        link: "https://taskboard4494.netlify.app/",
+        tag: "JavaScript"
+    },
     {
         title: "Tenzi",
         description: "A fun dice game for all ages.",
         image: "./img/gif3.gif",
         link: "https://tenzigame1.netlify.app/",
         tag: "React"
-    },
-    {
-        title: "Task Board",
-        description: "Task management board.",
-        image: "./img/gif4.gif",
-        link: "https://taskboard4494.netlify.app/",
-        tag: "JavaScript"
     },
     {
         title: "Hangman",
